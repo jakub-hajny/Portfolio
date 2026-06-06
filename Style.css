@@ -71,5 +71,5 @@ img{
     transition: all 6s ease;
 }
 img:hover{
-    transform: rotate(7200deg) scale(150%);
+    transform: rotate(7200deg) scale(120%);
 }

@@ -1,34 +1,75 @@
 body {
+    display: flex;
     min-height: 100vh;
     margin: 0;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Landing-page{
     display: flex;
     flex-direction: column;
+    width: 100%;
+
+}
+.Name-part{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
-
 .Name{
     display: flex;
-    justify-content: center;
-    font-size: 50px;
+    
+    font-size: 4em;
     font-weight: bold;
-    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.freestyle{
+
+.Undername-bar-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10vw;
-    justify-items: center;
-    align-items: center;
 }
-.skills{
+.Undername-bar-flex{
     display: flex;
     justify-content: center;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Freestyle{
+    max-width: fit-content;
+    display: flex;
     align-items: center;
-    background-color: rgb(224, 57, 57);
-    border-radius: 20em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(192, 171, 132);
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+.Freestyle:hover{
+    transform: scale(110%);
+    background-color: rgb(215, 180, 114);
+}
+
+
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-position: 70%;
+    object-fit: cover;
+    transition: all 6s ease;
+}
+img:hover{
+    transform: rotate(7200deg) scale(150%);
 }

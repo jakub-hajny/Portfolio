@@ -12,16 +12,15 @@ body {
     width: 100%;
 
 }
-.Name-part{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.Name-part {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
     align-items: center;
-    gap: 1rem;
+    width: 100%;
+    gap: 60px; 
 }
 .Name{
     display: flex;
-    
     font-size: 4em;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
@@ -75,11 +74,20 @@ a{
 }
 
 
-img{
+.profile-photo{
     width: 180px;
     height: 180px;
     border-radius: 50%;
     flex-shrink: 0;
     object-position: 70%;
     object-fit: cover;
+}
+/* Pushes the photo to the right edge of its column, close to the name */
+.profile-photo {
+    justify-self: end;
+}
+
+/* Creates an invisible 3rd column to balance the layout and keep the name strictly centered */
+.Name-part::after {
+    content: "";
 }

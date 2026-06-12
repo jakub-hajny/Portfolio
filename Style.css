@@ -51,13 +51,27 @@ a{
     border-radius: 2rem;
     background-color: rgb(192, 171, 132);
     font-size: 1em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
     font-weight: 550;
     transition: all 0.3s ease;
 }
-.Freestyle:hover{
-    transform: scale(110%);
-    background-color: rgb(215, 180, 114);
+.Freestyle-link{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(192, 171, 132);
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    transition: all 0.15s ease-out;
+}
+
+.Freestyle-link:hover{
+    transform: scale(105%) translateY(-5%);
+    background-color: rgb(213, 172, 95);
 }
 
 
@@ -68,8 +82,4 @@ img{
     flex-shrink: 0;
     object-position: 70%;
     object-fit: cover;
-    transition: all 6s ease;
-}
-img:hover{
-    transform: rotate(7200deg) scale(120%);
 }
